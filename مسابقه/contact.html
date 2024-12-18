@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - تحسين اللغة العربية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        header {
+            background-color: #17a2b8;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+        form {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">تحسين اللغة</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link " href="مسابقه.htm">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reading.html">القراءة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="writing.html">الكتابة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="grammar.html">القواعد</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>تواصل معنا</h1>
+        <p>نرحب بجميع استفساراتك وآرائك</p>
+    </header>
+
+    <div class="container my-5">
+        <form action="#" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">الاسم الكامل</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">رسالتك</label>
+                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">إرسال</button>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>جميع الحقوق محفوظة &copy; 2024 تحسين اللغة العربية</p>
+    </footer>
+</body>
+</html>

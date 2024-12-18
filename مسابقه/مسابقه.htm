@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحسين اللغة العربية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-image: url('images/arabic_language.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 2px 2px 5px #000;
+            padding: 80px 0;
+        }
+        .info-section {
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .info-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        #progress-bar {
+            height: 5px;
+            background-color: #007bff;
+            width: 0;
+        }
+        .step {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .step h4 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التقدم -->
+    <div id="progress-bar"></div>
+
+    <!-- الصفحة الرئيسية -->
+    <header class="text-center">
+        <h1>مرحبًا بك في موقع تحسين اللغة العربية</h1>
+        <p>تعلم، اكتب، واقرأ لتحسين مهاراتك اللغوية!</p>
+        <a href="#sections" class="btn btn-primary mt-3">ابدأ الآن</a>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="competition.html">تحسين اللغة</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="مسابقه.htm"></a>الرئيسية</li>
+                    <li class="nav-item"><a class="nav-link" href="reading.html">القراءة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="writing.html">الكتابة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="grammar.html">القواعد</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="sections" class="container my-5">
+        <h2 class="text-center">أهمية اللغة العربية</h2>
+        <div class="info-section row mt-4">
+            <div class="col-md-6">
+                <p>
+                    اللغة العربية لغة عالمية تتحدث بها ملايين الناس، وتعد من أقدم اللغات. تمثل أساسًا للعلوم والثقافة والتواصل بين الشعوب. 
+                </p>
+                <ul>
+                    <li>تطوير الفكر والتعبير.</li>
+                    <li>تعلم القواعد لتحسين الفهم والكتابة.</li>
+                    <li>تأثيرها في التراث الثقافي والأدبي.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="arabic_calligraphy.jpg.jpg" alt="الخط العربي">
+            </div>
+        </div>
+    </div>
+
+    <!-- قسم الخطوات -->
+    <div class="container my-5">
+        <h2 class="text-center">خطوات تحسين مهاراتك</h2>
+        <div class="step">
+            <h4>الخطوة 1: القراءة اليومية</h4>
+            <p>ابدأ بقراءة نصوص قصيرة، مثل القصص أو المقالات، وزد صعوبتها تدريجيًا.</p>
+        </div>
+        <div class="step">
+            <h4>الخطوة 2: الكتابة المستمرة</h4>
+            <p>اكتب فقرة يوميًا عن موضوع يثير اهتمامك، وتحقق من القواعد والإملاء.</p>
+        </div>
+        <div class="step">
+            <h4>الخطوة 3: تعلم القواعد</h4>
+            <p>راجع قواعد النحو والإعراب وطبقها في تمارين يومية.</p>
+        </div>
+        <div class="step">
+            <h4>الخطوة 4: الاستماع والتحدث</h4>
+            <p>شاهد برامج باللغة العربية وتحدث مع أشخاص لتحسين مهاراتك.</p>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>جميع الحقوق محفوظة &copy; 2024 تحسين اللغة العربية</p>
+    </footer>
+
+    <script>
+        // شريط التقدم
+        window.addEventListener('scroll', () => {
+            const progressBar = document.getElementById('progress-bar');
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (window.scrollY / scrollHeight) * 100;
+            progressBar.style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
